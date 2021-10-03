@@ -1,0 +1,7 @@
+Word = str(input("Insira uma palavra aqui: "))
+Texto = Word[::-1]
+
+if Texto.lower() == Word.lower():
+    print("A palavra '" + Word + "' é um palíndromo!")
+else:
+    print("A palavra '" + Word + "' não é um palíndromo...")
