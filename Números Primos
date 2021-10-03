@@ -1,0 +1,11 @@
+Num = int(input('Insira o número aqui: '))
+Primo = False
+
+for i in range(2,Num):
+    if (Num % i) == 0:
+        Primo = True
+
+if Primo:
+    print('O número', Num, 'não é primo!')
+else:
+    print('O número', Num, 'é primo!')
