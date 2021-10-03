@@ -1,0 +1,26 @@
+Num = int(input("Insira o número aqui: "))
+
+a0 = 0
+a1 = 1
+a2 = 1
+fibonacci = [a0]
+
+for x in range (0, 1000):
+    a2 = a1 + a0
+    a0 = a1
+    a1 = a2
+    fibonacci.append(a0)
+
+Teste = Num in fibonacci
+
+if Teste == True:
+    t1 = fibonacci.index(Num)-1
+    t2 = fibonacci.index(Num)-2
+    t3 = fibonacci.index(Num)-3
+    n1 = str(fibonacci[t1])
+    n2 = str(fibonacci[t2])
+    n3 = str(fibonacci[t3])
+    Num = str(Num)
+    print("O número " + Num + " está na sequência Fibonacci depois dos números " + n3 + ", " + n2 + " e " + n1)
+else:
+    print("O número", Num, "não está na sequência!")
