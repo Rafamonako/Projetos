@@ -1,0 +1,7 @@
+Num = int(input('Insira o número: '))
+resto = Num % 2
+
+if resto == 0:
+    print('O número', Num, 'é par!')
+else:
+    print('O número', Num, 'é ímpar!')
