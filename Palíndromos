@@ -1,5 +1,9 @@
-Word = str(input("Insira uma palavra aqui: "))
+Word = input("Insira uma palavra aqui: ")
 Texto = Word[::-1]
+
+while Word.isdigit():
+    print('Por favor, insira apenas palavras!')
+    Word = str(input("Insira uma palavra aqui: "))
 
 if Texto.lower() == Word.lower():
     print("A palavra '" + Word + "' é um palíndromo!")
