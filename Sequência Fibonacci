@@ -13,7 +13,15 @@ for x in range (0, 1000):
 
 Teste = Num in fibonacci
 
-if Teste == True:
+while Num < 0:
+    print('Por favor, insira um número maior do que 0!')
+    Num = int(input("Insira o número aqui: "))
+
+if Num == 0:
+    print('O número', Num, 'é o primeiro da sequência Fibonacci.')
+elif Num == 1:
+    print('O número', Num, 'está na sequência Fibonacci depois dos números 0 e 1')
+elif Teste == True:
     t1 = fibonacci.index(Num)-1
     t2 = fibonacci.index(Num)-2
     t3 = fibonacci.index(Num)-3
