@@ -1,7 +1,13 @@
 Num = int(input('Insira o número: '))
 resto = Num % 2
 
-if resto == 0:
+while Num < 0:
+    print('Por favor, insira um número maior do que 0!')
+    Num = int(input("Insira o número aqui: "))
+
+if Num == 0:
+    print('O número', Num, 'é neutro!')
+elif resto == 0:
     print('O número', Num, 'é par!')
 else:
     print('O número', Num, 'é ímpar!')
