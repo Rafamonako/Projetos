@@ -1,0 +1,20 @@
+a = int(input('Insira a nota - 1º Bimestre: '))
+while a > 10:
+        a = int(input('Nota inválida. Insira nota novamente: '))
+
+b = int(input('Insira a nota - 2º Bimestre: '))
+while b > 10:
+        b = int(input('Nota inválida. Insira nota novamente: '))
+
+c = int(input('Insira a nota - 3º Bimestre: '))
+while c > 10:
+        c = int(input('Nota inválida. Insira nota novamente: '))
+
+d = int(input('Insira a nota - 4º Bimestre: '))
+while d > 10:
+        d = int(input('Nota inválida. Insira nota novamente: '))
+
+media = (a + b + c + d) / 4
+
+print('Suas notas são: {}, {}, {}, {}'.format(a, b, c, d))
+print('A média é: {}'.format(media))
