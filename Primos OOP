@@ -1,0 +1,27 @@
+class Primos:
+    def __init__(self, num):
+        self.Num = num
+
+    def verificar_primo(self):
+        self.Primo = False
+        for i in range(2, self.Num):
+            if (self.Num % i) == 0:
+                self.Primo = True
+
+            return self.Primo
+
+    def mostrar_primo(self):
+        if self.Num == 0:
+            print('O número', self.Num, 'é neutro!')
+        elif self.Primo:
+            print('O número', self.Num, 'não é primo!')
+        else:
+            print('O número', self.Num, 'é primo!')
+
+        return self.Primo
+
+
+if __name__ == "__main__":
+    Num = int(input('Insira o número aqui: '))
+    ver_primo = Primos(Num)
+    print(ver_primo.verificar_primo())
